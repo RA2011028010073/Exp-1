@@ -1,0 +1,138 @@
+Preparing your terminal...
+[cloudshell-user@ip-10-1-29-114 ~]$ Try these commands to get started:
+aws help  or  aws <command> help  or  aws <command> --cli-auto-prompt
+[cloudshell-user@ip-10-1-29-114 ~]$ aws configure
+AWS Access Key ID [None]: AKIAZC5O7PSFPTT4GVMO
+AWS Secret Access Key [None]: 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                                          
+Default region name [None]: 
+Default output format [None]: 
+[cloudshell-user@ip-10-1-29-114 ~]$ set get-caller-identity
+[cloudshell-user@ip-10-1-29-114 ~]$ sts get-caller-identity
+bash: sts: command not found
+[cloudshell-user@ip-10-1-29-114 ~]$ aws sts get-caller-identity
+{
+    "UserId": "624747838602",
+    "Account": "624747838602",
+    "Arn": "arn:aws:iam::624747838602:root"
+}
+[cloudshell-user@ip-10-1-29-114 ~]$ aws s3 ls
+[cloudshell-user@ip-10-1-29-114 ~]$ aws s3 ls
+[cloudshell-user@ip-10-1-29-114 ~]$ aws s3api create-bucket my-new-test-bucket101 --region us-east-1
+
+usage: aws [options] <command> <subcommand> [<subcommand> ...] [parameters]
+To see help text, you can run:
+
+  aws help
+  aws <command> help
+  aws <command> <subcommand> help
+
+aws: error: the following arguments are required: --bucket
+
+[cloudshell-user@ip-10-1-29-114 ~]$ aws s3api create-bucket my-new-test-bucket101 --region us-east-1
+
+usage: aws [options] <command> <subcommand> [<subcommand> ...] [parameters]
+To see help text, you can run:
+
+  aws help
+  aws <command> help
+  aws <command> <subcommand> help
+
+aws: error: the following arguments are required: --bucket
+
+[cloudshell-user@ip-10-1-29-114 ~]$ aws s3 ls bucketName
+
+An error occurred (AllAccessDisabled) when calling the ListObjectsV2 operation: All access to this object has been disabled
+[cloudshell-user@ip-10-1-29-114 ~]$ aws s3 ls
+[cloudshell-user@ip-10-1-29-114 ~]$ aws s3 Ls
+
+usage: aws [options] <command> <subcommand> [<subcommand> ...] [parameters]
+To see help text, you can run:
+
+  aws help
+  aws <command> help
+  aws <command> <subcommand> help
+
+aws: error: argument subcommand: Invalid choice, valid choices are:
+
+ls                                       | website                                 
+cp                                       | mv                                      
+rm                                       | sync                                    
+mb                                       | rb                                      
+presign                                 
+
+[cloudshell-user@ip-10-1-29-114 ~]$ aws s3 bucketName
+
+usage: aws [options] <command> <subcommand> [<subcommand> ...] [parameters]
+To see help text, you can run:
+
+  aws help
+  aws <command> help
+  aws <command> <subcommand> help
+
+aws: error: argument subcommand: Invalid choice, valid choices are:
+
+ls                                       | website                                 
+cp                                       | mv                                      
+rm                                       | sync                                    
+mb                                       | rb                                      
+presign                                 
+
+[cloudshell-user@ip-10-1-29-114 ~]$ create bucket
+bash: create: command not found
+[cloudshell-user@ip-10-1-29-114 ~]$ aws s3 Ls bucketName
+
+usage: aws [options] <command> <subcommand> [<subcommand> ...] [parameters]
+To see help text, you can run:
+
+  aws help
+  aws <command> help
+  aws <command> <subcommand> help
+
+aws: error: argument subcommand: Invalid choice, valid choices are:
+
+ls                                       | website                                 
+cp                                       | mv                                      
+rm                                       | sync                                    
+mb                                       | rb                                      
+presign                                 
+
+[cloudshell-user@ip-10-1-29-114 ~]$ aws s3 ls bucketName
+
+An error occurred (AllAccessDisabled) when calling the ListObjectsV2 operation: All access to this object has been disabled
+[cloudshell-user@ip-10-1-29-114 ~]$ aws s3 l
+
+usage: aws [options] <command> <subcommand> [<subcommand> ...] [parameters]
+To see help text, you can run:
+
+  aws help
+  aws <command> help
+  aws <command> <subcommand> help
+
+aws: error: argument subcommand: Invalid choice, valid choices are:
+
+ls                                       | website                                 
+cp                                       | mv                                      
+rm                                       | sync                                    
+mb                                       | rb                                      
+presign                                 
+
+[cloudshell-user@ip-10-1-29-114 ~]$ aws s3 ls
+2022-09-20 05:24:18 shayan073
+[cloudshell-user@ip-10-1-29-114 ~]$ aws s3 ls bucketName
+
+An error occurred (AllAccessDisabled) when calling the ListObjectsV2 operation: All access to this object has been disabled
+[cloudshell-user@ip-10-1-29-114 ~]$ aws s3 ls
+2022-09-20 05:24:18 shayan073
+[cloudshell-user@ip-10-1-29-114 ~]$ aws s3 ls my-new-test-bucket103
+
+An error occurred (NoSuchBucket) when calling the ListObjectsV2 operation: The specified bucket does not exist
+[cloudshell-user@ip-10-1-29-114 ~]$ aws s3 ls shayan073
+[cloudshell-user@ip-10-1-29-114 ~]$ aws s3 rb s3://my-new-test-bucket103 --force
+fatal error: An error occurred (NoSuchBucket) when calling the ListObjectsV2 operation: The specified bucket does not exist
+
+remove_bucket failed: Unable to delete all objects in the bucket, bucket will not be deleted.
+[cloudshell-user@ip-10-1-29-114 ~]$ Lost your connection to the environment.
+Press any key to reconnect and continue using AWS CloudShell
+Your session timed out due to inactivity and has been terminated.
+Connection is lost. Please refresh the browser to re-establish the connection.
+Preparing your terminal...
